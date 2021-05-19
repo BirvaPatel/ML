@@ -1,7 +1,7 @@
 ## Problem:
 There are 6 new patients at an Emergency Room (ER) at a busy hospital. Each patient needs to be addressed by any one of its six available doctors. 
 Because of the differences in symptoms of the patients as well as the expertise and experience of the doctors, the doctors require spending varying amounts of 
-time on attending each patient. The senior doctor of the ER has estimated the time requirements as shown in Table 1.
+time on attending each patient. The senior doctor of the ER has estimated the time requirements as shown in Table 1.</br>
 ![alt text](https://github.com/BirvaPatel/ML/blob/main/Assignment-1/Table.PNG)
 1. Formulate an optimal assignment of Patient 1 and Patient 2 to Doctor 4 and Doctor 5 in such a way that each doctor receives a different patient and the total hours spent 
 by the doctors is minimized.
@@ -23,7 +23,7 @@ Here we have some conditions to satisfy:
 2. No more than one doctor should be selected. which means each column should have only 1 selected value.
 ## Solution Part-2:
 table with randomly selected values,</br>
-![alt text](https://github.com/BirvaPatel/ML/blob/main/Assignment-1/Selectedtable.PNG)
+![alt text](https://github.com/BirvaPatel/ML/blob/main/Assignment-1/Selectedtable.PNG)</br>
 According to my algorithm, it checks all possibilities to minimize the sum and no doctor is assigned to two or more patients or no patient is assigned to more than two doctors.</br>
 Same logic as first question, but here I can not define all the variables independently, so I used for loops to satisfy all the conditions.</br>
 for example:</br>
