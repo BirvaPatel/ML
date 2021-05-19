@@ -1,0 +1,21 @@
+
+
+Output::::
+
+
+(tf_gpu) B:\python>python assig-2-part-1.py
+(7000, 3)
+(5000, 3)
+(2000, 3)
+(5000, 2)
+(5000,)
+(2000, 2)
+(2000,)
+******************Training Results*******************
+Training time: 0.09373021125793457s
+training accuracy:  0.9928
+training RMSE:  0.08485281374238571
+****************Testing Results*********************
+Testing time: 0.015620946884155273s
+testing accuracy:  0.929
+testing RMSE:  0.2664582518894845
