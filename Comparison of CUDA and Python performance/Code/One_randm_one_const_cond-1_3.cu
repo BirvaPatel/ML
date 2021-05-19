@@ -1,0 +1,108 @@
+#include <cublas_v2.h>
+#include <curand.h>
+#include <cassert>
+#include <cmath>
+#include <ctime>
+#include <iostream>
+#include <vector>
+#include "addvec.h"
+
+
+int matmul(const int M, const int N, const int K, const int iter) {
+
+    // random number generator using Pseudo 
+    curandGenerator_t prng;
+    curandCreateGenerator(&prng, CURAND_RNG_PSEUDO_DEFAULT);
+
+    // seed setting
+    curandSetPseudoRandomGeneratorSeed(prng, (unsigned long long)clock());
+
+    // for static B, i am generating random values for B only one time.
+    float* d_b;
+    const size_t bytes_b = K * N * sizeof(float);
+    cudaMalloc(&d_b, bytes_b);
+    // Filling matrix B with random numbers 
+    curandGenerateUniform(prng, d_b, K * M);
+
+    // calculation of gpu runtime using cuda event creator.
+    float elapsed = 0;
+    cudaEvent_t start, stop;
+    cudaEventCreate(&start);
+    cudaEventCreate(&stop);
+    cudaEventRecord(start, 0);
+
+    // loop to generate random A and C for given number of iteration.
+    for (int n = 1; n <= iter; n++) {
+
+        // Pre-calculate the size of our matrices
+        const size_t bytes_a = M * K * sizeof(float);
+        const size_t bytes_c = M * N * sizeof(float);
+
+        // Vectors for the host data
+        std::vector<float> h_a(M * K);
+        std::vector<float> h_b(K * N);
+        std::vector<float> h_c(M * N);
+
+        // Allocate device memory
+        float* d_a, * d_c;
+        cudaMalloc(&d_a, bytes_a);
+        cudaMalloc(&d_b, bytes_b);
+        cudaMalloc(&d_c, bytes_c);
+
+        // Filling matrix A with random numbers 
+        curandGenerateUniform(prng, d_a, M * K);
+
+        // cuBLAS handle
+        cublasHandle_t handle;
+        cublasCreate(&handle);
+
+        // Scalaing factors
+        float alpha = 1.0f;
+        float beta = 0.0f;
+
+        // matrix calculation using cublas sgemm.
+        cublasSgemm(handle, CUBLAS_OP_N, CUBLAS_OP_N, M, N, K, &alpha, d_a, M, d_b, K, &beta, d_c, M);
+
+        // Copy back the three matrices
+        cudaMemcpy(h_a.data(), d_a, bytes_a, cudaMemcpyDeviceToHost);
+        cudaMemcpy(h_b.data(), d_b, bytes_b, cudaMemcpyDeviceToHost);
+        cudaMemcpy(h_c.data(), d_c, bytes_c, cudaMemcpyDeviceToHost);
+
+        
+
+        // Free our memory
+        cudaFree(d_a);
+        cudaFree(d_b);
+        cudaFree(d_c);
+    }
+    cudaEventRecord(stop, 0);
+    cudaEventSynchronize(stop);
+    cudaEventElapsedTime(&elapsed, start, stop);
+    cudaEventDestroy(start);
+    cudaEventDestroy(stop);
+    printf("The elapsed time in gpu was %.2f ms\ ", elapsed);
+    return 0;
+}
+int main() {
+
+    // Parameters for Condition 1.
+    // where An * B = Cn , n = number of iterations
+    const int M = 500;
+    const int N = 400;
+    const int K = 500;
+    const int iter = 100;
+
+    matmul(M, N, K, iter);
+    std::cout << "First condition COMPLETED SUCCESSFULLY\n";
+
+    // Parameters for Condition 3.
+    // where An * B = Cn , n = number of iterations
+    const int M1 = 6;
+    const int N1 = 9;
+    const int K1 = 4000;
+    const int iter1 = 1000;
+
+    matmul(M1, N1, K1, iter1);
+    std::cout << "Third condition COMPLETED SUCCESSFULLY\n";
+    return 0;
+}
