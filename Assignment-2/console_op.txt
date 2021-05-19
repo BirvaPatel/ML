@@ -1,0 +1,245 @@
+(tf_gpu) B:\Smart-health\Assign-2-soln>python 1111092.py
+Using TensorFlow backend.
+2020-07-28 20:49:30.507338: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+(1000, 2500)
+(1000,)
+2020-07-28 20:49:35.691273: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-07-28 20:49:35.722215: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce GTX 1660 Ti computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 24 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 268.26GiB/s
+2020-07-28 20:49:35.733776: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-07-28 20:49:35.745973: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-07-28 20:49:35.754790: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-07-28 20:49:35.761379: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-07-28 20:49:35.776783: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-07-28 20:49:35.784173: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-07-28 20:49:35.800450: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-07-28 20:49:35.806650: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-07-28 20:49:35.810940: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-07-28 20:49:35.823484: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce GTX 1660 Ti computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 24 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 268.26GiB/s
+2020-07-28 20:49:35.847268: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-07-28 20:49:35.850113: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-07-28 20:49:35.853348: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-07-28 20:49:35.866506: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-07-28 20:49:35.869866: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-07-28 20:49:35.872887: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-07-28 20:49:35.876176: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-07-28 20:49:35.879868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-07-28 20:49:36.476833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-28 20:49:36.480715: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-07-28 20:49:36.483166: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-07-28 20:49:36.486295: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4625 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1660 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Train on 800 samples, validate on 200 samples
+Epoch 1/50
+2020-07-28 20:49:37.354160: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+800/800 [==============================] - 1s 641us/step - loss: 2559652.8600 - val_loss: 1685157.9300
+Epoch 2/50
+800/800 [==============================] - 0s 87us/step - loss: 582264.6446 - val_loss: 92371.5897
+Epoch 3/50
+800/800 [==============================] - 0s 87us/step - loss: 41788.1223 - val_loss: 16730.4272
+Epoch 4/50
+800/800 [==============================] - 0s 90us/step - loss: 9493.1903 - val_loss: 6623.1586
+Epoch 5/50
+800/800 [==============================] - 0s 91us/step - loss: 6758.9205 - val_loss: 6864.9806
+Epoch 6/50
+800/800 [==============================] - 0s 96us/step - loss: 6552.2758 - val_loss: 6564.1855
+Epoch 7/50
+800/800 [==============================] - 0s 97us/step - loss: 6493.4191 - val_loss: 6625.5779
+Epoch 8/50
+800/800 [==============================] - 0s 98us/step - loss: 6533.3130 - val_loss: 6587.7508
+Epoch 9/50
+800/800 [==============================] - 0s 96us/step - loss: 6463.0765 - val_loss: 6652.6128
+Epoch 10/50
+800/800 [==============================] - 0s 96us/step - loss: 6390.5701 - val_loss: 6636.0600
+Epoch 11/50
+800/800 [==============================] - 0s 93us/step - loss: 6385.2647 - val_loss: 6592.7688
+Epoch 12/50
+800/800 [==============================] - 0s 104us/step - loss: 6349.0026 - val_loss: 6600.8239
+Epoch 13/50
+800/800 [==============================] - 0s 116us/step - loss: 6361.3169 - val_loss: 6695.2973
+Epoch 14/50
+800/800 [==============================] - 0s 102us/step - loss: 6339.0798 - val_loss: 6550.8347
+Epoch 15/50
+800/800 [==============================] - 0s 90us/step - loss: 6305.7068 - val_loss: 6565.7936
+Epoch 16/50
+800/800 [==============================] - 0s 92us/step - loss: 6322.1344 - val_loss: 6571.6866
+Epoch 17/50
+800/800 [==============================] - 0s 89us/step - loss: 6220.8654 - val_loss: 6619.1750
+Epoch 18/50
+800/800 [==============================] - 0s 83us/step - loss: 6194.3238 - val_loss: 6550.5909
+Epoch 19/50
+800/800 [==============================] - 0s 84us/step - loss: 6142.0748 - val_loss: 6576.7391
+Epoch 20/50
+800/800 [==============================] - 0s 91us/step - loss: 6156.1576 - val_loss: 6548.6945
+Epoch 21/50
+800/800 [==============================] - 0s 89us/step - loss: 6101.3635 - val_loss: 6627.6539
+Epoch 22/50
+800/800 [==============================] - 0s 102us/step - loss: 6097.4926 - val_loss: 6598.4004
+Epoch 23/50
+800/800 [==============================] - 0s 90us/step - loss: 6034.8803 - val_loss: 6548.7230
+Epoch 24/50
+800/800 [==============================] - 0s 97us/step - loss: 6009.1126 - val_loss: 6548.8659
+Epoch 25/50
+800/800 [==============================] - 0s 94us/step - loss: 5944.2587 - val_loss: 6583.3390
+Epoch 26/50
+800/800 [==============================] - 0s 97us/step - loss: 5963.5551 - val_loss: 6558.0038
+Epoch 27/50
+800/800 [==============================] - 0s 95us/step - loss: 5986.5911 - val_loss: 6586.0191
+Epoch 28/50
+800/800 [==============================] - 0s 98us/step - loss: 6007.0425 - val_loss: 6672.2414
+Epoch 29/50
+800/800 [==============================] - 0s 95us/step - loss: 5796.6539 - val_loss: 6801.5440
+Epoch 30/50
+800/800 [==============================] - 0s 97us/step - loss: 5803.3683 - val_loss: 6672.3934
+Epoch 31/50
+800/800 [==============================] - 0s 92us/step - loss: 5729.9488 - val_loss: 6571.5837
+Epoch 32/50
+800/800 [==============================] - 0s 89us/step - loss: 5697.8212 - val_loss: 6567.6164
+Epoch 33/50
+800/800 [==============================] - 0s 110us/step - loss: 5653.3506 - val_loss: 6614.5980
+Epoch 34/50
+800/800 [==============================] - 0s 98us/step - loss: 5634.1417 - val_loss: 6546.4105
+Epoch 35/50
+800/800 [==============================] - 0s 106us/step - loss: 5730.4346 - val_loss: 6673.6650
+Epoch 36/50
+800/800 [==============================] - 0s 105us/step - loss: 5572.4466 - val_loss: 6588.3676
+Epoch 37/50
+800/800 [==============================] - 0s 93us/step - loss: 5767.1459 - val_loss: 6945.9273
+Epoch 38/50
+800/800 [==============================] - 0s 115us/step - loss: 5605.0287 - val_loss: 6681.1619
+Epoch 39/50
+800/800 [==============================] - 0s 101us/step - loss: 5401.7094 - val_loss: 6590.2466
+Epoch 40/50
+800/800 [==============================] - 0s 97us/step - loss: 5408.1228 - val_loss: 6548.2392
+Epoch 41/50
+800/800 [==============================] - 0s 101us/step - loss: 5264.0274 - val_loss: 6587.7785
+Epoch 42/50
+800/800 [==============================] - 0s 97us/step - loss: 5207.7686 - val_loss: 6596.0401
+Epoch 43/50
+800/800 [==============================] - 0s 90us/step - loss: 5239.6346 - val_loss: 6552.3221
+Epoch 44/50
+800/800 [==============================] - 0s 100us/step - loss: 5137.2535 - val_loss: 6778.6621
+Epoch 45/50
+800/800 [==============================] - 0s 110us/step - loss: 5082.9425 - val_loss: 6613.4279
+Epoch 46/50
+800/800 [==============================] - 0s 106us/step - loss: 5024.2563 - val_loss: 6617.5216
+Epoch 47/50
+800/800 [==============================] - 0s 98us/step - loss: 5007.1577 - val_loss: 6553.1894
+Epoch 48/50
+800/800 [==============================] - 0s 93us/step - loss: 4990.2478 - val_loss: 6668.1132
+Epoch 49/50
+800/800 [==============================] - 0s 100us/step - loss: 5014.8482 - val_loss: 6970.5099
+Epoch 50/50
+800/800 [==============================] - 0s 95us/step - loss: 4896.8936 - val_loss: 6824.7485
+Train on 800 samples, validate on 200 samples
+Epoch 1/50
+2020-07-28 20:49:42.445144: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-07-28 20:49:43.793945: W tensorflow/stream_executor/gpu/redzone_allocator.cc:312] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation. This message will be only logged once.
+800/800 [==============================] - 2s 2ms/step - loss: 2828935.6300 - val_loss: 2530475.0000
+Epoch 2/50
+800/800 [==============================] - 0s 194us/step - loss: 1267820.1969 - val_loss: 490192.9875
+Epoch 3/50
+800/800 [==============================] - 0s 181us/step - loss: 47777.3450 - val_loss: 317520.3787
+Epoch 4/50
+800/800 [==============================] - 0s 175us/step - loss: 11523.3858 - val_loss: 255562.6437
+Epoch 5/50
+800/800 [==============================] - 0s 188us/step - loss: 7366.4329 - val_loss: 287232.1525
+Epoch 6/50
+800/800 [==============================] - 0s 189us/step - loss: 6865.5711 - val_loss: 289317.5237
+Epoch 7/50
+800/800 [==============================] - 0s 189us/step - loss: 7015.2428 - val_loss: 284847.6725
+Epoch 8/50
+800/800 [==============================] - 0s 183us/step - loss: 6799.0520 - val_loss: 275197.7587
+Epoch 9/50
+800/800 [==============================] - 0s 213us/step - loss: 6803.2473 - val_loss: 276704.5375
+Epoch 10/50
+800/800 [==============================] - 0s 187us/step - loss: 6843.9214 - val_loss: 281949.9600
+Epoch 11/50
+800/800 [==============================] - 0s 188us/step - loss: 6900.0726 - val_loss: 283035.2300
+Epoch 12/50
+800/800 [==============================] - 0s 177us/step - loss: 6753.1808 - val_loss: 282886.6163
+Epoch 13/50
+800/800 [==============================] - 0s 175us/step - loss: 6785.9622 - val_loss: 286746.2175
+Epoch 14/50
+800/800 [==============================] - 0s 192us/step - loss: 6834.5884 - val_loss: 289750.0775
+Epoch 15/50
+800/800 [==============================] - 0s 185us/step - loss: 6906.9095 - val_loss: 278252.9913
+Epoch 16/50
+800/800 [==============================] - 0s 189us/step - loss: 6750.1392 - val_loss: 279608.9250
+Epoch 17/50
+800/800 [==============================] - 0s 192us/step - loss: 6832.4033 - val_loss: 284409.7288
+Epoch 18/50
+800/800 [==============================] - 0s 201us/step - loss: 6835.2907 - val_loss: 285932.9950
+Epoch 19/50
+800/800 [==============================] - 0s 191us/step - loss: 6834.0251 - val_loss: 280450.5625
+Epoch 20/50
+800/800 [==============================] - 0s 189us/step - loss: 6750.9418 - val_loss: 293726.1537
+Epoch 21/50
+800/800 [==============================] - 0s 199us/step - loss: 6945.4125 - val_loss: 290300.5650
+Epoch 22/50
+800/800 [==============================] - 0s 177us/step - loss: 6753.9722 - val_loss: 286931.1675
+Epoch 23/50
+800/800 [==============================] - 0s 173us/step - loss: 6701.5753 - val_loss: 267194.4763
+Epoch 24/50
+800/800 [==============================] - 0s 188us/step - loss: 6853.8821 - val_loss: 273289.1200
+Epoch 25/50
+800/800 [==============================] - 0s 189us/step - loss: 6688.7973 - val_loss: 272430.0400
+Epoch 26/50
+800/800 [==============================] - 0s 203us/step - loss: 6685.7780 - val_loss: 274401.9988
+Epoch 27/50
+800/800 [==============================] - 0s 191us/step - loss: 6813.6279 - val_loss: 273337.0575
+Epoch 28/50
+800/800 [==============================] - 0s 185us/step - loss: 6811.4751 - val_loss: 282777.7925
+Epoch 29/50
+800/800 [==============================] - 0s 193us/step - loss: 6710.9837 - val_loss: 284616.2825
+Epoch 30/50
+800/800 [==============================] - 0s 192us/step - loss: 6884.0440 - val_loss: 281194.5538
+Epoch 31/50
+800/800 [==============================] - 0s 194us/step - loss: 6811.9889 - val_loss: 280775.6200
+Epoch 32/50
+800/800 [==============================] - 0s 188us/step - loss: 6660.0560 - val_loss: 278807.2675
+Epoch 33/50
+800/800 [==============================] - 0s 182us/step - loss: 6729.5119 - val_loss: 271017.8725
+Epoch 34/50
+800/800 [==============================] - 0s 192us/step - loss: 6799.3462 - val_loss: 293452.8925
+Epoch 35/50
+800/800 [==============================] - 0s 189us/step - loss: 7039.9821 - val_loss: 276500.4875
+Epoch 36/50
+800/800 [==============================] - 0s 189us/step - loss: 6768.7934 - val_loss: 274914.1800
+Epoch 37/50
+800/800 [==============================] - 0s 196us/step - loss: 6752.7923 - val_loss: 290187.5262
+Epoch 38/50
+800/800 [==============================] - 0s 188us/step - loss: 6769.8843 - val_loss: 275940.1975
+Epoch 39/50
+800/800 [==============================] - 0s 199us/step - loss: 6720.7972 - val_loss: 283909.3450
+Epoch 40/50
+800/800 [==============================] - 0s 193us/step - loss: 6696.0908 - val_loss: 274806.7400
+Epoch 41/50
+800/800 [==============================] - 0s 193us/step - loss: 6677.5047 - val_loss: 281656.4788
+Epoch 42/50
+800/800 [==============================] - 0s 205us/step - loss: 6753.4268 - val_loss: 277586.2137
+Epoch 43/50
+800/800 [==============================] - 0s 198us/step - loss: 6621.0429 - val_loss: 270654.5212
+Epoch 44/50
+800/800 [==============================] - 0s 203us/step - loss: 6621.6474 - val_loss: 268308.1838
+Epoch 45/50
+800/800 [==============================] - 0s 189us/step - loss: 6572.2655 - val_loss: 281665.2875
+Epoch 46/50
+800/800 [==============================] - 0s 183us/step - loss: 6892.0185 - val_loss: 271969.8950
+Epoch 47/50
+800/800 [==============================] - 0s 188us/step - loss: 6615.2628 - val_loss: 280133.1400
+Epoch 48/50
+800/800 [==============================] - 0s 186us/step - loss: 6704.7365 - val_loss: 288249.4825
+Epoch 49/50
+800/800 [==============================] - 0s 185us/step - loss: 6672.9329 - val_loss: 272792.7812
+Epoch 50/50
+800/800 [==============================] - 0s 192us/step - loss: 6635.9302 - val_loss: 278361.1275
+############### ANN ###########################
+mean_squared_error: 6824.748516504243
+mean_absolute_error: 67.63435485839844
+############### CNN ###########################
+mean_squared_error: 278361.1266356907
+mean_absolute_error: 521.215425415039
