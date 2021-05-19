@@ -1,0 +1,345 @@
+(tf_gpu) B:\ML_lec\Assign-5>python 101-scratch.py
+Using TensorFlow backend.
+2020-11-28 16:39:09.480691: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+First 100 images per class as Training and rest as testing
+Data Splitted
+(3060, 227, 227, 3)
+(3060, 102)
+(6085, 227, 227, 3)
+(6085, 102)
+2020-11-28 16:40:39.035346: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-11-28 16:40:40.591030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce GTX 1660 Ti computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 24 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 268.26GiB/s
+2020-11-28 16:40:40.602909: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-11-28 16:40:40.776996: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-11-28 16:40:40.825821: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-11-28 16:40:40.838068: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-11-28 16:40:40.888412: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-11-28 16:40:40.910804: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-11-28 16:40:40.994305: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-11-28 16:40:41.497575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-11-28 16:40:41.509609: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-11-28 16:40:41.524804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce GTX 1660 Ti computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 24 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 268.26GiB/s
+2020-11-28 16:40:41.533131: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-11-28 16:40:41.536415: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-11-28 16:40:41.539822: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-11-28 16:40:41.543864: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-11-28 16:40:41.547704: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-11-28 16:40:41.551311: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-11-28 16:40:41.555870: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-11-28 16:40:41.558803: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-11-28 16:40:46.076868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-28 16:40:46.083115: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-11-28 16:40:46.086202: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-11-28 16:40:46.093260: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4625 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1660 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Epoch 1/150
+2020-11-28 16:40:50.776499: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-11-28 16:40:51.523294: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-11-28 16:40:54.862288: W tensorflow/stream_executor/gpu/redzone_allocator.cc:312] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation. This message will be only logged once.
+48/48 [==============================] - 30s 616ms/step - loss: 5.9249 - accuracy: 0.0212
+Epoch 2/150
+48/48 [==============================] - 24s 495ms/step - loss: 4.5486 - accuracy: 0.0559
+Epoch 3/150
+48/48 [==============================] - 24s 494ms/step - loss: 4.3139 - accuracy: 0.0735
+Epoch 4/150
+48/48 [==============================] - 24s 500ms/step - loss: 4.1483 - accuracy: 0.0958
+Epoch 5/150
+48/48 [==============================] - 25s 522ms/step - loss: 4.0390 - accuracy: 0.1121
+Epoch 6/150
+48/48 [==============================] - 25s 524ms/step - loss: 3.9571 - accuracy: 0.1196
+Epoch 7/150
+48/48 [==============================] - 27s 557ms/step - loss: 3.8515 - accuracy: 0.1324
+Epoch 8/150
+48/48 [==============================] - 26s 539ms/step - loss: 3.7438 - accuracy: 0.1549
+Epoch 9/150
+48/48 [==============================] - 25s 531ms/step - loss: 3.6687 - accuracy: 0.1598
+Epoch 10/150
+48/48 [==============================] - 26s 538ms/step - loss: 3.5569 - accuracy: 0.1850
+Epoch 11/150
+48/48 [==============================] - 27s 553ms/step - loss: 3.5134 - accuracy: 0.1892
+Epoch 12/150
+48/48 [==============================] - 26s 537ms/step - loss: 3.4088 - accuracy: 0.2114
+Epoch 13/150
+48/48 [==============================] - 26s 536ms/step - loss: 3.3259 - accuracy: 0.2196
+Epoch 14/150
+48/48 [==============================] - 26s 535ms/step - loss: 3.1616 - accuracy: 0.2556
+Epoch 15/150
+48/48 [==============================] - 26s 545ms/step - loss: 3.1711 - accuracy: 0.2500
+Epoch 16/150
+48/48 [==============================] - 25s 530ms/step - loss: 3.0437 - accuracy: 0.2686
+Epoch 17/150
+48/48 [==============================] - 26s 533ms/step - loss: 3.0131 - accuracy: 0.2781
+Epoch 18/150
+48/48 [==============================] - 25s 527ms/step - loss: 2.9385 - accuracy: 0.2902
+Epoch 19/150
+48/48 [==============================] - 25s 530ms/step - loss: 2.8489 - accuracy: 0.3062
+Epoch 20/150
+48/48 [==============================] - 26s 544ms/step - loss: 2.8060 - accuracy: 0.3229
+Epoch 21/150
+48/48 [==============================] - 26s 534ms/step - loss: 2.7084 - accuracy: 0.3327
+Epoch 22/150
+48/48 [==============================] - 26s 537ms/step - loss: 2.6302 - accuracy: 0.3458
+Epoch 23/150
+48/48 [==============================] - 28s 581ms/step - loss: 2.5812 - accuracy: 0.3605
+Epoch 24/150
+48/48 [==============================] - 25s 525ms/step - loss: 2.4982 - accuracy: 0.3856
+Epoch 25/150
+48/48 [==============================] - 27s 558ms/step - loss: 2.4907 - accuracy: 0.3840
+Epoch 26/150
+48/48 [==============================] - 26s 547ms/step - loss: 2.3844 - accuracy: 0.4075
+Epoch 27/150
+48/48 [==============================] - 26s 539ms/step - loss: 2.2879 - accuracy: 0.4209
+Epoch 28/150
+48/48 [==============================] - 26s 535ms/step - loss: 2.2602 - accuracy: 0.4206
+Epoch 29/150
+48/48 [==============================] - 26s 542ms/step - loss: 2.1767 - accuracy: 0.4415
+Epoch 30/150
+48/48 [==============================] - 25s 523ms/step - loss: 2.1032 - accuracy: 0.4624
+Epoch 31/150
+48/48 [==============================] - 26s 546ms/step - loss: 2.0724 - accuracy: 0.4634
+Epoch 32/150
+48/48 [==============================] - 25s 526ms/step - loss: 2.0064 - accuracy: 0.4752
+Epoch 33/150
+48/48 [==============================] - 2250s 47s/step - loss: 1.9609 - accuracy: 0.4908
+Epoch 34/150
+48/48 [==============================] - 24s 498ms/step - loss: 1.8405 - accuracy: 0.5144
+Epoch 35/150
+48/48 [==============================] - 24s 495ms/step - loss: 1.8440 - accuracy: 0.5137
+Epoch 36/150
+48/48 [==============================] - 24s 491ms/step - loss: 1.7756 - accuracy: 0.5261
+Epoch 37/150
+48/48 [==============================] - 24s 493ms/step - loss: 1.7738 - accuracy: 0.5297
+Epoch 38/150
+48/48 [==============================] - 24s 492ms/step - loss: 1.6112 - accuracy: 0.5660
+Epoch 39/150
+48/48 [==============================] - 23s 482ms/step - loss: 1.5973 - accuracy: 0.5752
+Epoch 40/150
+48/48 [==============================] - 23s 479ms/step - loss: 1.5773 - accuracy: 0.5817
+Epoch 41/150
+48/48 [==============================] - 24s 497ms/step - loss: 1.5580 - accuracy: 0.5804
+Epoch 42/150
+48/48 [==============================] - 24s 491ms/step - loss: 1.4296 - accuracy: 0.6114
+Epoch 43/150
+48/48 [==============================] - 23s 485ms/step - loss: 1.4461 - accuracy: 0.6147
+Epoch 44/150
+48/48 [==============================] - 23s 478ms/step - loss: 1.3631 - accuracy: 0.6271
+Epoch 45/150
+48/48 [==============================] - 23s 481ms/step - loss: 1.3945 - accuracy: 0.6261
+Epoch 46/150
+48/48 [==============================] - 23s 490ms/step - loss: 1.2559 - accuracy: 0.6448
+Epoch 47/150
+48/48 [==============================] - 24s 490ms/step - loss: 1.2429 - accuracy: 0.6588
+Epoch 48/150
+48/48 [==============================] - 24s 491ms/step - loss: 1.2052 - accuracy: 0.6634
+Epoch 49/150
+48/48 [==============================] - 23s 486ms/step - loss: 1.1351 - accuracy: 0.6791
+Epoch 50/150
+48/48 [==============================] - 25s 514ms/step - loss: 1.1700 - accuracy: 0.6794
+Epoch 51/150
+48/48 [==============================] - 24s 499ms/step - loss: 1.0909 - accuracy: 0.6905
+Epoch 52/150
+48/48 [==============================] - 24s 495ms/step - loss: 1.0751 - accuracy: 0.6948
+Epoch 53/150
+48/48 [==============================] - 24s 505ms/step - loss: 1.0793 - accuracy: 0.6944
+Epoch 54/150
+48/48 [==============================] - 24s 502ms/step - loss: 1.0357 - accuracy: 0.7033
+Epoch 55/150
+48/48 [==============================] - 24s 491ms/step - loss: 0.9866 - accuracy: 0.7176
+Epoch 56/150
+48/48 [==============================] - 25s 516ms/step - loss: 1.0393 - accuracy: 0.7134
+Epoch 57/150
+48/48 [==============================] - 24s 505ms/step - loss: 0.9865 - accuracy: 0.7258
+Epoch 58/150
+48/48 [==============================] - 24s 502ms/step - loss: 0.9480 - accuracy: 0.7376
+Epoch 59/150
+48/48 [==============================] - 24s 508ms/step - loss: 0.8164 - accuracy: 0.7637
+Epoch 60/150
+48/48 [==============================] - 24s 497ms/step - loss: 0.8616 - accuracy: 0.7477
+Epoch 61/150
+48/48 [==============================] - 24s 493ms/step - loss: 0.8470 - accuracy: 0.7588
+Epoch 62/150
+48/48 [==============================] - 25s 522ms/step - loss: 0.8324 - accuracy: 0.7670
+Epoch 63/150
+48/48 [==============================] - 24s 506ms/step - loss: 0.7532 - accuracy: 0.7873
+Epoch 64/150
+48/48 [==============================] - 24s 493ms/step - loss: 0.8175 - accuracy: 0.7657
+Epoch 65/150
+48/48 [==============================] - 24s 503ms/step - loss: 0.7391 - accuracy: 0.7941
+Epoch 66/150
+48/48 [==============================] - 24s 496ms/step - loss: 0.7347 - accuracy: 0.7925
+Epoch 67/150
+48/48 [==============================] - 24s 496ms/step - loss: 0.7192 - accuracy: 0.7967
+Epoch 68/150
+48/48 [==============================] - 24s 505ms/step - loss: 0.7002 - accuracy: 0.8039
+Epoch 69/150
+48/48 [==============================] - 25s 513ms/step - loss: 0.6998 - accuracy: 0.7993
+Epoch 70/150
+48/48 [==============================] - 24s 495ms/step - loss: 0.6678 - accuracy: 0.8127
+Epoch 71/150
+48/48 [==============================] - 24s 503ms/step - loss: 0.6137 - accuracy: 0.8235
+Epoch 72/150
+48/48 [==============================] - 24s 501ms/step - loss: 0.6096 - accuracy: 0.8222
+Epoch 73/150
+48/48 [==============================] - 25s 518ms/step - loss: 0.6259 - accuracy: 0.8252
+Epoch 74/150
+48/48 [==============================] - 25s 512ms/step - loss: 0.6401 - accuracy: 0.8193
+Epoch 75/150
+48/48 [==============================] - 24s 504ms/step - loss: 0.5446 - accuracy: 0.8392
+Epoch 76/150
+48/48 [==============================] - 25s 527ms/step - loss: 0.5646 - accuracy: 0.8435
+Epoch 77/150
+48/48 [==============================] - 24s 509ms/step - loss: 0.5804 - accuracy: 0.8353
+Epoch 78/150
+48/48 [==============================] - 24s 498ms/step - loss: 0.5691 - accuracy: 0.8415
+Epoch 79/150
+48/48 [==============================] - 24s 492ms/step - loss: 0.5409 - accuracy: 0.8431
+Epoch 80/150
+48/48 [==============================] - 26s 535ms/step - loss: 0.4964 - accuracy: 0.8556
+Epoch 81/150
+48/48 [==============================] - 24s 503ms/step - loss: 0.4917 - accuracy: 0.8556
+Epoch 82/150
+48/48 [==============================] - 23s 489ms/step - loss: 0.5517 - accuracy: 0.8451
+Epoch 83/150
+48/48 [==============================] - 24s 506ms/step - loss: 0.5156 - accuracy: 0.8526
+Epoch 84/150
+48/48 [==============================] - 25s 522ms/step - loss: 0.4808 - accuracy: 0.8572
+Epoch 85/150
+48/48 [==============================] - 24s 490ms/step - loss: 0.4650 - accuracy: 0.8663
+Epoch 86/150
+48/48 [==============================] - 24s 498ms/step - loss: 0.4682 - accuracy: 0.8680
+Epoch 87/150
+48/48 [==============================] - 25s 514ms/step - loss: 0.4132 - accuracy: 0.8820
+Epoch 88/150
+48/48 [==============================] - 24s 507ms/step - loss: 0.4674 - accuracy: 0.8716
+Epoch 89/150
+48/48 [==============================] - 24s 501ms/step - loss: 0.4444 - accuracy: 0.8722
+Epoch 90/150
+48/48 [==============================] - 24s 507ms/step - loss: 0.3946 - accuracy: 0.8892
+Epoch 91/150
+48/48 [==============================] - 23s 484ms/step - loss: 0.3780 - accuracy: 0.8873
+Epoch 92/150
+48/48 [==============================] - 23s 489ms/step - loss: 0.3506 - accuracy: 0.8925
+Epoch 93/150
+48/48 [==============================] - 24s 498ms/step - loss: 0.4403 - accuracy: 0.8752
+Epoch 94/150
+48/48 [==============================] - 23s 488ms/step - loss: 0.4282 - accuracy: 0.8804
+Epoch 95/150
+48/48 [==============================] - 24s 503ms/step - loss: 0.3412 - accuracy: 0.9007
+Epoch 96/150
+48/48 [==============================] - 24s 502ms/step - loss: 0.3844 - accuracy: 0.8846
+Epoch 97/150
+48/48 [==============================] - 23s 488ms/step - loss: 0.3756 - accuracy: 0.8915
+Epoch 98/150
+48/48 [==============================] - 24s 496ms/step - loss: 0.3727 - accuracy: 0.8935
+Epoch 99/150
+48/48 [==============================] - 24s 500ms/step - loss: 0.3681 - accuracy: 0.8967
+Epoch 100/150
+48/48 [==============================] - 24s 491ms/step - loss: 0.3515 - accuracy: 0.8990
+Epoch 101/150
+48/48 [==============================] - 24s 495ms/step - loss: 0.3391 - accuracy: 0.8997
+Epoch 102/150
+48/48 [==============================] - 24s 506ms/step - loss: 0.3508 - accuracy: 0.8925
+Epoch 103/150
+48/48 [==============================] - 23s 474ms/step - loss: 0.3395 - accuracy: 0.9026
+Epoch 104/150
+48/48 [==============================] - 23s 475ms/step - loss: 0.3084 - accuracy: 0.9072
+Epoch 105/150
+48/48 [==============================] - 24s 492ms/step - loss: 0.3372 - accuracy: 0.9033
+Epoch 106/150
+48/48 [==============================] - 23s 471ms/step - loss: 0.3316 - accuracy: 0.9016
+Epoch 107/150
+48/48 [==============================] - 23s 474ms/step - loss: 0.3305 - accuracy: 0.9020
+Epoch 108/150
+48/48 [==============================] - 23s 489ms/step - loss: 0.2933 - accuracy: 0.9183
+Epoch 109/150
+48/48 [==============================] - 23s 472ms/step - loss: 0.3221 - accuracy: 0.9036
+Epoch 110/150
+48/48 [==============================] - 23s 482ms/step - loss: 0.3336 - accuracy: 0.9007
+Epoch 111/150
+48/48 [==============================] - 24s 497ms/step - loss: 0.3483 - accuracy: 0.8925
+Epoch 112/150
+48/48 [==============================] - 23s 489ms/step - loss: 0.2926 - accuracy: 0.9144
+Epoch 113/150
+48/48 [==============================] - 24s 491ms/step - loss: 0.3271 - accuracy: 0.9078
+Epoch 114/150
+48/48 [==============================] - 24s 508ms/step - loss: 0.2765 - accuracy: 0.9167
+Epoch 115/150
+48/48 [==============================] - 24s 490ms/step - loss: 0.2872 - accuracy: 0.9176
+Epoch 116/150
+48/48 [==============================] - 24s 493ms/step - loss: 0.2852 - accuracy: 0.9052
+Epoch 117/150
+48/48 [==============================] - 24s 509ms/step - loss: 0.2887 - accuracy: 0.9127
+Epoch 118/150
+48/48 [==============================] - 24s 491ms/step - loss: 0.2745 - accuracy: 0.9180
+Epoch 119/150
+48/48 [==============================] - 24s 491ms/step - loss: 0.2637 - accuracy: 0.9232
+Epoch 120/150
+48/48 [==============================] - 24s 499ms/step - loss: 0.2563 - accuracy: 0.9245
+Epoch 121/150
+48/48 [==============================] - 24s 492ms/step - loss: 0.2577 - accuracy: 0.9261
+Epoch 122/150
+48/48 [==============================] - 23s 488ms/step - loss: 0.2496 - accuracy: 0.9235
+Epoch 123/150
+48/48 [==============================] - 24s 499ms/step - loss: 0.2877 - accuracy: 0.9206
+Epoch 124/150
+48/48 [==============================] - 24s 491ms/step - loss: 0.2410 - accuracy: 0.9261
+Epoch 125/150
+48/48 [==============================] - 24s 494ms/step - loss: 0.2371 - accuracy: 0.9291
+Epoch 126/150
+48/48 [==============================] - 24s 499ms/step - loss: 0.2245 - accuracy: 0.9343
+Epoch 127/150
+48/48 [==============================] - 24s 490ms/step - loss: 0.2284 - accuracy: 0.9327
+Epoch 128/150
+48/48 [==============================] - 24s 496ms/step - loss: 0.2097 - accuracy: 0.9307
+Epoch 129/150
+48/48 [==============================] - 24s 498ms/step - loss: 0.2243 - accuracy: 0.9405
+Epoch 130/150
+48/48 [==============================] - 24s 491ms/step - loss: 0.2376 - accuracy: 0.9297
+Epoch 131/150
+48/48 [==============================] - 24s 495ms/step - loss: 0.2265 - accuracy: 0.9333
+Epoch 132/150
+48/48 [==============================] - 24s 504ms/step - loss: 0.2204 - accuracy: 0.9340
+Epoch 133/150
+48/48 [==============================] - 24s 492ms/step - loss: 0.2069 - accuracy: 0.9422
+Epoch 134/150
+48/48 [==============================] - 24s 494ms/step - loss: 0.2118 - accuracy: 0.9405
+Epoch 135/150
+48/48 [==============================] - 24s 498ms/step - loss: 0.2009 - accuracy: 0.9405
+Epoch 136/150
+48/48 [==============================] - 24s 491ms/step - loss: 0.1906 - accuracy: 0.9425
+Epoch 137/150
+48/48 [==============================] - 24s 496ms/step - loss: 0.1746 - accuracy: 0.9484
+Epoch 138/150
+48/48 [==============================] - 24s 494ms/step - loss: 0.2026 - accuracy: 0.9425
+Epoch 139/150
+48/48 [==============================] - 24s 493ms/step - loss: 0.1863 - accuracy: 0.9438
+Epoch 140/150
+48/48 [==============================] - 24s 494ms/step - loss: 0.1740 - accuracy: 0.9520
+Epoch 141/150
+48/48 [==============================] - 24s 500ms/step - loss: 0.2175 - accuracy: 0.9382
+Epoch 142/150
+48/48 [==============================] - 24s 496ms/step - loss: 0.1827 - accuracy: 0.9464
+Epoch 143/150
+48/48 [==============================] - 24s 494ms/step - loss: 0.1885 - accuracy: 0.9392
+Epoch 144/150
+48/48 [==============================] - 24s 503ms/step - loss: 0.1749 - accuracy: 0.9493
+Epoch 145/150
+48/48 [==============================] - 24s 495ms/step - loss: 0.1970 - accuracy: 0.9428
+Epoch 146/150
+48/48 [==============================] - 24s 497ms/step - loss: 0.2218 - accuracy: 0.9389
+Epoch 147/150
+48/48 [==============================] - 24s 500ms/step - loss: 0.1823 - accuracy: 0.9497
+Epoch 148/150
+48/48 [==============================] - 24s 495ms/step - loss: 0.1846 - accuracy: 0.9428
+Epoch 149/150
+48/48 [==============================] - 24s 495ms/step - loss: 0.1721 - accuracy: 0.9490
+Epoch 150/150
+48/48 [==============================] - 24s 503ms/step - loss: 0.1796 - accuracy: 0.9444
+96/96 [==============================] - 10s 107ms/step
+
+Training accuracy time with Alexnet model from scratch with Caltech101 3870.557685259752s
+Test accuracy: 68.44207060337067

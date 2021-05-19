@@ -1,0 +1,104 @@
+(tf_gpu) B:\ML_lec\Assign-5\Assign-5_1111092>python 15-pretrained.py
+Using TensorFlow backend.
+2020-11-28 18:26:52.663831: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+First 30 images per class as Training and rest as testing
+Data Splitted
+(1500, 224, 224, 3)
+(1500, 15)
+(2985, 224, 224, 3)
+(2985, 15)
+2020-11-28 18:27:04.983974: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library nvcuda.dll
+2020-11-28 18:27:05.009736: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce GTX 1660 Ti computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 24 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 268.26GiB/s
+2020-11-28 18:27:05.017832: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-11-28 18:27:05.026396: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-11-28 18:27:05.035330: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-11-28 18:27:05.041608: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-11-28 18:27:05.049149: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-11-28 18:27:05.056151: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-11-28 18:27:05.070980: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-11-28 18:27:05.074857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-11-28 18:27:05.078339: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX AVX2
+2020-11-28 18:27:05.093743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1555] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce GTX 1660 Ti computeCapability: 7.5
+coreClock: 1.59GHz coreCount: 24 deviceMemorySize: 6.00GiB deviceMemoryBandwidth: 268.26GiB/s
+2020-11-28 18:27:05.107986: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudart64_101.dll
+2020-11-28 18:27:05.115105: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-11-28 18:27:05.118803: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cufft64_10.dll
+2020-11-28 18:27:05.126774: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library curand64_10.dll
+2020-11-28 18:27:05.136263: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusolver64_10.dll
+2020-11-28 18:27:05.140894: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cusparse64_10.dll
+2020-11-28 18:27:05.148307: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-11-28 18:27:05.157495: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1697] Adding visible gpu devices: 0
+2020-11-28 18:27:05.656475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1096] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-11-28 18:27:05.660894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102]      0
+2020-11-28 18:27:05.663866: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] 0:   N
+2020-11-28 18:27:05.667129: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1241] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4625 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1660 Ti, pci bus id: 0000:01:00.0, compute capability: 7.5)
+Epoch 1/10
+2020-11-28 18:27:08.815870: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cublas64_10.dll
+2020-11-28 18:27:09.077729: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library cudnn64_7.dll
+2020-11-28 18:27:10.161763: W tensorflow/stream_executor/gpu/redzone_allocator.cc:312] Internal: Invoking GPU asm compilation is supported on Cuda non-Windows platforms only
+Relying on driver to perform ptx compilation. This message will be only logged once.
+24/24 [==============================] - 11s 465ms/step - loss: 0.7777 - accuracy: 0.7307
+Epoch 2/10
+24/24 [==============================] - 10s 424ms/step - loss: 0.7312 - accuracy: 0.7460
+Epoch 3/10
+24/24 [==============================] - 11s 439ms/step - loss: 0.7044 - accuracy: 0.7640
+Epoch 4/10
+24/24 [==============================] - 11s 458ms/step - loss: 0.6909 - accuracy: 0.7840
+Epoch 5/10
+24/24 [==============================] - 10s 427ms/step - loss: 0.6277 - accuracy: 0.8100
+Epoch 6/10
+24/24 [==============================] - 10s 437ms/step - loss: 0.5917 - accuracy: 0.8020
+Epoch 7/10
+24/24 [==============================] - 11s 470ms/step - loss: 0.5655 - accuracy: 0.8013
+Epoch 8/10
+24/24 [==============================] - 10s 425ms/step - loss: 0.5945 - accuracy: 0.8100
+Epoch 9/10
+24/24 [==============================] - 11s 448ms/step - loss: 0.5734 - accuracy: 0.8007
+Epoch 10/10
+24/24 [==============================] - 11s 452ms/step - loss: 0.4998 - accuracy: 0.8233
+Epoch 1/10
+24/24 [==============================] - 11s 462ms/step - loss: 0.5313 - accuracy: 0.8193
+Epoch 2/10
+24/24 [==============================] - 11s 479ms/step - loss: 0.5097 - accuracy: 0.8253
+Epoch 3/10
+24/24 [==============================] - 10s 433ms/step - loss: 0.4882 - accuracy: 0.8273
+Epoch 4/10
+24/24 [==============================] - 11s 448ms/step - loss: 0.5041 - accuracy: 0.8287
+Epoch 5/10
+24/24 [==============================] - 11s 479ms/step - loss: 0.4965 - accuracy: 0.8293
+Epoch 6/10
+24/24 [==============================] - 10s 435ms/step - loss: 0.4555 - accuracy: 0.8467
+Epoch 7/10
+24/24 [==============================] - 11s 456ms/step - loss: 0.4641 - accuracy: 0.8380
+Epoch 8/10
+24/24 [==============================] - 11s 479ms/step - loss: 0.4604 - accuracy: 0.8367
+Epoch 9/10
+24/24 [==============================] - 10s 436ms/step - loss: 0.4575 - accuracy: 0.8507
+Epoch 10/10
+24/24 [==============================] - 11s 452ms/step - loss: 0.4250 - accuracy: 0.8513
+Epoch 1/10
+24/24 [==============================] - 11s 459ms/step - loss: 0.4170 - accuracy: 0.8980
+Epoch 2/10
+24/24 [==============================] - 10s 425ms/step - loss: 0.3631 - accuracy: 0.8787
+Epoch 3/10
+24/24 [==============================] - 11s 443ms/step - loss: 0.4092 - accuracy: 0.8887
+Epoch 4/10
+24/24 [==============================] - 11s 457ms/step - loss: 0.4622 - accuracy: 0.8547
+Epoch 5/10
+24/24 [==============================] - 10s 426ms/step - loss: 0.3723 - accuracy: 0.8820
+Epoch 6/10
+24/24 [==============================] - 10s 434ms/step - loss: 0.3854 - accuracy: 0.8987
+Epoch 7/10
+24/24 [==============================] - 11s 458ms/step - loss: 0.3701 - accuracy: 0.8707
+Epoch 8/10
+24/24 [==============================] - 10s 424ms/step - loss: 0.3796 - accuracy: 0.8813
+Epoch 9/10
+24/24 [==============================] - 11s 452ms/step - loss: 0.3539 - accuracy: 0.8873
+Epoch 10/10
+24/24 [==============================] - 11s 452ms/step - loss: 0.3243 - accuracy: 0.8953
+47/47 [==============================] - 2s 43ms/step
+Training accuracy time with Alexnet pretrained model with Scene-15 : 986.7564839674884s
+Test accuracy: 79.61473822593689
